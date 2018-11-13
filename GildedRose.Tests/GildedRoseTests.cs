@@ -54,7 +54,8 @@ namespace GildedRose.Tests
         }
 
         [TestCase("+5 Dexterity Vest", 10, 20, 9, 19)]
-        public void DexterityVestFactoryTest(string name, int sellIn, int quality, int expectedSellIn, int expectedQuality)
+        [TestCase("Aged Brie", 2, 0, 1, 1)]
+        public void GildedRoseFactoryTest(string name, int sellIn, int quality, int expectedSellIn, int expectedQuality)
         {
             var item = new Item { Name = name, SellIn = sellIn, Quality = quality };
             item = GildedRose.CreateGildedRoseFactory(item);

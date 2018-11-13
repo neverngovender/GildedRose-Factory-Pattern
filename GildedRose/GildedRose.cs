@@ -17,6 +17,12 @@ namespace GildedRose
                     item = factory.UpdateQuality();
                     break;
 
+                case "Aged Brie":
+
+                    factory = new AgedBrieFactory(item);
+                    item = factory.UpdateQuality();
+                    break;
+
                 default:
                     break;
             }
