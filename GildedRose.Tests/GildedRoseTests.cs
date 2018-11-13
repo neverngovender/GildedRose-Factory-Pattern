@@ -58,6 +58,7 @@ namespace GildedRose.Tests
         [TestCase("Elixir of the Mongoose", 5, 7, 4, 6)]
         [TestCase("Sulfuras, Hand of Ragnaros", 0, 80, 0, 80)]
         [TestCase("Backstage passes to a TAFKAL80ETC concert", 15, 20, 14, 21)]
+        [TestCase("Conjured Mana Cake", 3, 6, 2, 4)]
         public void GildedRoseFactoryTest(string name, int sellIn, int quality, int expectedSellIn, int expectedQuality)
         {
             var item = new Item { Name = name, SellIn = sellIn, Quality = quality };

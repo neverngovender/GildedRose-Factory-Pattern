@@ -28,6 +28,11 @@ namespace GildedRose
                 factory = new BackstagePassFactory(item);
                 item = factory.UpdateQuality();
             }
+            else if (item.Name.Contains("Conjured"))
+            {
+                factory = new ConjuredFactory(item);
+                item = factory.UpdateQuality();
+            }
 
             return item;
         }
