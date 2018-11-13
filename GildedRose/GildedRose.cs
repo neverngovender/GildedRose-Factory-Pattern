@@ -7,30 +7,26 @@ namespace GildedRose
     {
         public static Item CreateGildedRoseFactory(Item item)
         {
-            GildedRoseFactory factory = null;
-
-            switch (item.Name)
+            GildedRoseFactory factory;
+            if (item.Name.Equals("+5 Dexterity Vest"))
             {
-                case "+5 Dexterity Vest":
-
-                    factory = new DexterityVestFactory(item);
-                    item = factory.UpdateQuality();
-                    break;
-
-                case "Aged Brie":
-
-                    factory = new AgedBrieFactory(item);
-                    item = factory.UpdateQuality();
-                    break;
-
-                case "Elixir of the Mongoose":
-
-                    factory = new ElixirOfTheMongooseFactory(item);
-                    item = factory.UpdateQuality();
-                    break;
-
-                default:
-                    break;
+                factory = new DexterityVestFactory(item);
+                item = factory.UpdateQuality();
+            }
+            else if (item.Name.Equals("Aged Brie"))
+            {
+                factory = new AgedBrieFactory(item);
+                item = factory.UpdateQuality();
+            }
+            else if (item.Name.Equals("Elixir of the Mongoose"))
+            {
+                factory = new ElixirOfTheMongooseFactory(item);
+                item = factory.UpdateQuality();
+            }
+            else if (item.Name.Contains("Backstage passes"))
+            {
+                factory = new BackstagePassFactory(item);
+                item = factory.UpdateQuality();
             }
 
             return item;
