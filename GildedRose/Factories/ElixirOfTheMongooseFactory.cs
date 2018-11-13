@@ -1,10 +1,14 @@
-﻿namespace GildedRose.Factories
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace GildedRose.Factories
 {
-    public class DexterityVestFactory : GildedRoseFactory
+    public class ElixirOfTheMongooseFactory : GildedRoseFactory
     {
         protected override Item Item { get; }
 
-        public DexterityVestFactory(Item item)
+        public ElixirOfTheMongooseFactory(Item item)
         {
             Item = item;
         }

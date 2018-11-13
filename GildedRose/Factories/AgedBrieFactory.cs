@@ -6,7 +6,7 @@ namespace GildedRose.Factories
 {
     public class AgedBrieFactory : GildedRoseFactory
     {
-        private Item Item { get; set; }
+        protected override Item Item { get; }
 
         public AgedBrieFactory(Item item)
         {

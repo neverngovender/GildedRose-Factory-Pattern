@@ -23,6 +23,12 @@ namespace GildedRose
                     item = factory.UpdateQuality();
                     break;
 
+                case "Elixir of the Mongoose":
+
+                    factory = new ElixirOfTheMongooseFactory(item);
+                    item = factory.UpdateQuality();
+                    break;
+
                 default:
                     break;
             }
