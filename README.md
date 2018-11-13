@@ -44,3 +44,10 @@ method and Items property static if you like, we'll cover for you).
 Just for clarification, an item can never have its Quality increase 
 above 50, however "Sulfuras" is a legendary item and as such its 
 Quality is 80 and it never alters.
+
+# Important note
+Tests only show one test case per item. However, multiple test cases can be added, or current test cases can be modified to test for different scenarios based on values passed in.
+
+# Assumptions
+- Kata does not state that a combination of items should be tested for i.e. "Conjured Aged Brie" or "Conjured Backstage passes", so I do not account for that.
+- No implementaion for legendary items such as "Sulfuras, Hand of Ragnaros", as such items do not have to be sold nor do they degrade in quality.
