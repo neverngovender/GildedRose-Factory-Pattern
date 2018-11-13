@@ -1,4 +1,6 @@
-﻿namespace GildedRose.Factories
+﻿using GildedRose.Models;
+
+namespace GildedRose.Factories
 {
     public abstract class GildedRoseFactory
     {

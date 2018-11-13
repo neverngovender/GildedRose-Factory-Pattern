@@ -1,4 +1,6 @@
-﻿namespace GildedRose.Factories
+﻿using GildedRose.Models;
+
+namespace GildedRose.Factories
 {
     public class DexterityVestFactory : GildedRoseFactory
     {
